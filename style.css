@@ -1,23 +1,13 @@
-h1{
-    text-align: center;
-    font-size: 50px;
-    text-shadow: -5px -5px 2px red;
+.social{
+    width: 83px;
+    height: 83px;
+    background-image: url(social.png);
+    background-repeat: no-repeat;
+    background-position: 0px -84px;
+    border-radius: 50%;
 }
 
-.box{
-    width: 600px;
-    height: 400px;
-    text-align: center;
-    margin: auto;
-    border: 2px solid rgb(0,255,0);
-    box-shadow: 5px 5px 5px rgb(0,255,0 , 0.5);
-}
-
-.box img{
-    width: 100%;
-    height: 100%;
-}
-
-h3{
-    margin: 0;
+.social:hover{
+    background-position: 0px -167px;
+    transition: 0.5s;
 }
