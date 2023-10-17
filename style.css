@@ -1,19 +1,13 @@
-.bg{
-    width: auto;
-    height: 600px;
-    background: url(tree.jpg) no-repeat center;
-    overflow: hidden;
-    margin: auto;
+h1{
+    color:rgb(0 , 0 ,255 , 0.5);
 }
 
 p{
-    font-size: 50px;
+    color:#211a3b;
 }
 
-.box p{
-    text-align: center;
-    background-color: white;
-    padding: 10px;
-    margin-top: 100px;
-    opacity: .3;
+.box{
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(red , green)
 }
