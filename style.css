@@ -1,0 +1,19 @@
+.bg{
+    width: auto;
+    height: 600px;
+    background: url(tree.jpg) no-repeat center;
+    overflow: hidden;
+    margin: auto;
+}
+
+p{
+    font-size: 50px;
+}
+
+.box p{
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    margin-top: 100px;
+    opacity: .3;
+}
