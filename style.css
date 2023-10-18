@@ -1,58 +1,41 @@
-.box{
-    width: 400px;
-    height: 400px;
-    background-color: tomato;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+main{
+    width: 75%;
     margin: 100px auto;
-    position: relative;
-    /* animation-name: square;
-    animation-duration: 5s;
-    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    animation-delay: 2s;
-    animation-direction: alternate;
-    animation-fill-mode: backwards;
-    animation-play-state: running;*/
-    animation: square 5s linear 2s infinite alternate backwards running;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-
+    border: 2px solid green;
+    display: grid;
+    grid-template-rows: 60px 100px 200px 60px;
+    grid-template-columns: repeat(3 , 1fr) 150px;
+    grid-gap:10px;
 }
 
-@keyframes square{
-    0%{
-        background-color: tomato;
-        left: 0;
-        right: 0;
-    }
-    20%{
-        background-color: green;
-        left: 500px;
-        right:0px;
-
-    }
-    40%{
-        background-color: blue;
-        left: 500px;
-        right: 500px;
-        border-radius: 50%;
-    }
-    60%{
-        background-color: red;
-        top:0;
-        left:0;
-        border-radius: 30%;
-    }
-    100%{
-        background-color: orange;
-        bottom: 0px;
-        left: -500px;
-    }
+.box1{
+    background-color: green;
+    grid-column: 1/-1;
 }
-
-.circle{
-    height: 100px;
-    width: 100px;
-    background-color: black;
-    border-radius: 50%;
-
+.box2{background-color: yellow;}
+.box3{background-color: red;}
+.box4{background-color: grey;}
+.box5{
+    background-color: aqua;
+    grid-row: 2/4;
+    grid-column: 4/5;
+}
+.box6{
+    background-color: tomato;
+    grid-column: 1/4;
+}
+.box7{
+    background-color: blue;
+    grid-column: 1/-1;
 }
