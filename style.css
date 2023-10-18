@@ -1,13 +1,58 @@
-.social{
-    width: 83px;
-    height: 83px;
-    background-image: url(social.png);
-    background-repeat: no-repeat;
-    background-position: 0px -84px;
-    border-radius: 50%;
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: tomato;
+    margin: 100px auto;
+    position: relative;
+    /* animation-name: square;
+    animation-duration: 5s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+    animation-play-state: running;*/
+    animation: square 5s linear 2s infinite alternate backwards running;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
 }
 
-.social:hover{
-    background-position: 0px -167px;
-    transition: 0.5s;
+@keyframes square{
+    0%{
+        background-color: tomato;
+        left: 0;
+        right: 0;
+    }
+    20%{
+        background-color: green;
+        left: 500px;
+        right:0px;
+
+    }
+    40%{
+        background-color: blue;
+        left: 500px;
+        right: 500px;
+        border-radius: 50%;
+    }
+    60%{
+        background-color: red;
+        top:0;
+        left:0;
+        border-radius: 30%;
+    }
+    100%{
+        background-color: orange;
+        bottom: 0px;
+        left: -500px;
+    }
+}
+
+.circle{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 50%;
+
 }
